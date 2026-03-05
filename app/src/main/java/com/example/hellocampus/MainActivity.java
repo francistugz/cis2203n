@@ -15,6 +15,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //sabotage
+        TextView counterDisplay = null ;
+        counterDisplay.setText ("0") ;
+
         if (getSupportActionBar() != null) {
             getSupportActionBar().setTitle("ID: 18400139");
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
