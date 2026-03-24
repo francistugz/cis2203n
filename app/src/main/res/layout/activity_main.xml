@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#121212"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/themeToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toggle Theme"
+        android:layout_gravity="end"
+        android:margin="10dp"/>
+
+    <TextView
+        android:id="@+id/ResultText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="40sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:padding="16dp"/>
+
+    <!-- BUTTON GRID -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="5"
+        android:columnCount="5">
+
+        <Button
+            android:id="@+id/btn1"
+            android:text="1"
+            android:layout_width="60dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:id="@+id/btn2"
+            android:text="2"
+            android:layout_width="60dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:text="3"/>
+
+        <Button
+            android:id="@+id/btn4"
+            android:text="4"
+            android:layout_width="60dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:id="@+id/btn5"
+            android:text="5"
+            android:layout_width="60dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:id="@+id/btn6"
+            android:text="6"
+            android:layout_width="60dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:id="@+id/btn7"
+            android:text="7"
+            android:layout_width="60dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:id="@+id/btn8"
+            android:text="8"
+            android:layout_width="60dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:id="@+id/btn9"
+            android:text="9"
+            android:layout_width="60dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:id="@+id/btn0"
+            android:text="0"
+            android:layout_width="60dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:id="@+id/Plus"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:text="+"/>
+
+        <Button
+            android:id="@+id/multiply"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:text="*"/>
+
+        <Button
+            android:id="@+id/Divide"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:text="/"/>
+
+        <Button
+            android:id="@+id/Subtract"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:text="-"/>
+
+        <Button
+            android:id="@+id/result"
+            android:text="="
+            android:layout_width="60dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:id="@+id/clear"
+            android:text="C"
+            android:layout_width="60dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:id="@+id/StudentID"
+            android:text="ID"
+            android:layout_width="65dp"
+            android:layout_height="50dp"/>
+
+    </GridLayout>
+
+</LinearLayout>
