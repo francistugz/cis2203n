@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     TextView ResultText;
 
     Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn0;
-    Button plus, minus, multiply, divide, equals, clear, themeToggle;
+    Button plus, minus, multiply, divide, equals, clear, themeToggle, studentID;
 
     double firstNum = 0;
     double secondNum = 0;
@@ -56,6 +56,8 @@ public class MainActivity extends AppCompatActivity {
         clear = findViewById(R.id.clear);
 
         themeToggle = findViewById(R.id.themeToggle);
+
+        studentID = findViewById(R.id.StudentID);
 
         if (savedInstanceState != null) {
             ResultText.setText(savedInstanceState.getString(KEY_RESULT, "0"));
@@ -99,6 +101,21 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
             }
+        });
+
+        studentID.setOnClickListener(v -> {
+            double current = Double.parseDouble(ResultText.getText().toString());
+            double multiplier = 1.39; // my ID number is: 18400139
+            double result = current * multiplier;
+
+            if (result == (int) result) {
+                ResultText.setText(String.valueOf((int) result));
+            } else {
+                ResultText.setText(String.valueOf(result));
+            }
+
+            operator = "";
+            isOperatorClicked = false;
         });
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
